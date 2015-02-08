@@ -1,0 +1,11 @@
+/auto-save-list
+/backups
+/elpa
+/lisp/local-settings.el
+/places
+/projectile-bookmarks.eld
+/server
+.DS_Store
+.mc-lists.el
+projectile.cache
+*.elc
