@@ -49,6 +49,9 @@
 ;; remove text in active region if inserting text
 (delete-selection-mode 1)
 
+;; make M-v always exactly undo C-v
+(setq scroll-preserve-screen-position 'always)
+
 ;; lines should be 80 characters wide
 (setq fill-column 80)
 
