@@ -39,7 +39,9 @@
           expand-region
           find-file-in-project
           flycheck
+          ghc ;; *stable* matches the latest ghc-mod on hackage, see https://github.com/kazu-yamamoto/ghc-mod
           git-gutter
+          haskell-mode
           magit
           markdown-mode
           multiple-cursors
@@ -58,6 +60,7 @@
 (mapcar (lambda (pkg) (add-to-list 'package-pinned-packages `(,pkg . "melpa")))
         '(
           helm
+          helm-ghc
           helm-projectile
           moe-theme
           projectile
