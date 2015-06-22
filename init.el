@@ -101,8 +101,14 @@
 
 
 ;; ## platform-specific settings
+
+;; cygwin
 (when (windowsp)
   (add-to-list 'exec-path "C:/cygwin64/bin"))
+
+;; homebrew
+(when (osxp)
+  (add-to-list 'exec-path "/usr/local/bin"))
 
 ;; ## host-specific settings (in version control)
 ;;
