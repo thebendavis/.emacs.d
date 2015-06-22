@@ -8,4 +8,6 @@
 .DS_Store
 .mc-lists.el
 projectile.cache
+recentf
+tramp
 *.elc
