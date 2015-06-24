@@ -51,5 +51,6 @@
 
 ;; function keys
 (global-set-key [f8] 'deft)
+(global-set-key [f9] 'magit-status)
 
 (provide 'key-bindings)
