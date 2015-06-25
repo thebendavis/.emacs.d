@@ -60,6 +60,7 @@
 (mapcar (lambda (pkg) (add-to-list 'package-pinned-packages `(,pkg . "melpa")))
         '(
           helm
+          helm-ag
           helm-ghc
           helm-projectile
           moe-theme

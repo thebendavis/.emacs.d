@@ -25,5 +25,8 @@
 ;; imenu shortcut
 (global-set-key (kbd "C-x i") 'helm-semantic-or-imenu)
 
+;; fast project-wide search via ag (the silver searcher)
+(global-set-key (kbd "C-M-s") 'helm-projectile-ag)
+
 ;; Browse the kill ring
 (global-set-key (kbd "C-x C-y") 'helm-show-kill-ring)
