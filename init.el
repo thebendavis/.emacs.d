@@ -67,6 +67,7 @@
           projectile
           undo-tree
           volatile-highlights
+          ws-butler
           ))
 
 ;; refresh package list (package-pinned-packages must be set before this point)

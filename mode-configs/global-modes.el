@@ -9,8 +9,10 @@
 (require 'volatile-highlights)
 (volatile-highlights-mode t)
 
-;; clean up whitespace before saving
-(add-hook 'before-save-hook 'cleanup-buffer-safe)
+;; clean up whitespace
+(require 'ws-butler)
+;;(add-hook 'before-save-hook 'cleanup-buffer-safe)
+(ws-butler-global-mode)
 
 ;; when I visit a point, start where I last left off.
 (require 'saveplace)
