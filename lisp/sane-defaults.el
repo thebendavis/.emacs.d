@@ -21,6 +21,9 @@
 (setq global-auto-revert-non-file-buffers t)
 (setq auto-revert-verbose nil)
 
+;; Reload the TAGS file without prompting
+(setq tags-revert-without-query 1)
+
 ;; Show keystrokes in progress
 (setq echo-keystrokes 0.1)
 
