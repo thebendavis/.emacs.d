@@ -39,7 +39,6 @@
           expand-region
           find-file-in-project
           flycheck
-          ghc ;; *stable* matches the latest ghc-mod on hackage, see https://github.com/kazu-yamamoto/ghc-mod
           git-gutter
           haskell-mode
           magit
@@ -61,7 +60,6 @@
         '(
           helm
           helm-ag
-          helm-ghc
           helm-projectile
           moe-theme
           projectile
