@@ -26,6 +26,7 @@
 (global-set-key (kbd "C-x i") 'helm-semantic-or-imenu)
 
 ;; fast project-wide search via ag (the silver searcher)
+(require 'grep)
 (global-set-key (kbd "C-M-s") 'helm-projectile-ag)
 
 ;; Browse the kill ring
