@@ -66,6 +66,7 @@
           undo-tree
           volatile-highlights
           ws-butler
+          yaml-mode
           ))
 
 ;; refresh package list (package-pinned-packages must be set before this point)
