@@ -4,6 +4,7 @@
 /lisp/local-settings.el
 /places
 /projectile-bookmarks.eld
+/semanticdb
 /server
 .DS_Store
 .mc-lists.el
