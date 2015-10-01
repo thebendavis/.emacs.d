@@ -109,7 +109,7 @@
 
 ;; homebrew
 (when (osxp)
-  (add-to-list 'exec-path "/usr/local/bin"))
+  (add-to-list 'exec-path (concat (my-home-dir) "homebrew/bin")))
 
 ;; ## host-specific settings (in version control)
 ;;
