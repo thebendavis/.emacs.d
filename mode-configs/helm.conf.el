@@ -29,5 +29,10 @@
 (require 'grep)
 (global-set-key (kbd "C-M-s") 'helm-projectile-ag)
 
-;; Browse the kill ring
+;; browse the kill ring
 (global-set-key (kbd "C-x C-y") 'helm-show-kill-ring)
+
+;; TAB does the default action, C-z chooses from list (swapped from default)
+(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
+(define-key helm-map (kbd "TAB")   'helm-execute-persistent-action)
+(define-key helm-map (kbd "C-z")   'helm-select-action)
