@@ -58,6 +58,7 @@
 ;; *MELPA (latest)*
 (mapcar (lambda (pkg) (add-to-list 'package-pinned-packages `(,pkg . "melpa")))
         '(
+          beacon
           helm
           helm-ag
           helm-projectile

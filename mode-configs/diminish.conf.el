@@ -1,5 +1,6 @@
 (require 'diminish)
 
+(eval-after-load "beacon"              '(diminish 'beacon-mode))
 (eval-after-load "git-gutter"          '(diminish 'git-gutter-mode))
 (eval-after-load "paredit"             '(diminish 'paredit-mode))
 (eval-after-load "rainbow-mode"        '(diminish 'rainbow-mode))

@@ -24,3 +24,6 @@
 ;; enable shift + arrow keys to change windows, when supported
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
+
+;; beacon: highlight the cursor whenever the window scrolls
+(beacon-mode 1)
