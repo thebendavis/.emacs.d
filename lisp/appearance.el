@@ -1,4 +1,9 @@
-(setq visible-bell t
+(defun my-mode-line-bell ()
+  (invert-face 'mode-line)
+  (run-with-timer 0.1 nil 'invert-face 'mode-line))
+
+(setq visible-bell nil
+      ring-bell-function #'my-mode-line-bell
       font-lock-maximum-decoration t
       color-theme-is-global t)
 
