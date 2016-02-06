@@ -30,7 +30,9 @@
 ;; ## set the color theme
 ;;(load-theme 'tsdh-dark)
 (require 'moe-theme)
-(moe-dark)
+;;(moe-dark)
+;;(load-theme 'material-light t)
+(load-theme 'material t)
 
 ;; manually set highlight-current-line background color
 ;;(set-face-background hl-line-face "#1c1c1c")

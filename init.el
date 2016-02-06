@@ -62,6 +62,7 @@
           helm
           helm-ag
           helm-projectile
+          material-theme
           moe-theme
           projectile
           undo-tree
