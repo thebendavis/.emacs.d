@@ -64,6 +64,7 @@
           helm-projectile
           material-theme
           moe-theme
+          pandoc-mode
           projectile
           undo-tree
           volatile-highlights
