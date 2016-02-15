@@ -76,4 +76,16 @@
       require-final-newline t
       ediff-window-setup-function 'ediff-setup-windows-plain)
 
+;; prevent garbage collection when we're in the minibuffer
+;; by setting gc-cons-threshold temporarily high, then restoring
+;; (see gc-cons-threshold documentation)
+(defun my-minibuffer-setup-hook ()
+  (setq gc-cons-threshold most-positive-fixnum))
+
+(defun my-minibuffer-exit-hook ()
+  (setq gc-cons-threshold 800000))
+
+(add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
+(add-hook 'minibuffer-exit-hook  #'my-minibuffer-exit-hook)
+
 (provide 'sane-defaults)
