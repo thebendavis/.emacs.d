@@ -58,6 +58,7 @@
 ;; *MELPA (latest)*
 (mapcar (lambda (pkg) (add-to-list 'package-pinned-packages `(,pkg . "melpa")))
         '(
+          base16-theme
           beacon
           helm
           helm-ag

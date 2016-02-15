@@ -32,7 +32,9 @@
 (require 'moe-theme)
 ;;(moe-dark)
 ;;(load-theme 'material-light t)
-(load-theme 'material t)
+;;(load-theme 'material t)
+(require 'base16-eighties-dark-theme)
+
 
 ;; manually set highlight-current-line background color
 ;;(set-face-background hl-line-face "#1c1c1c")
