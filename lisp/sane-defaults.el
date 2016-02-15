@@ -74,7 +74,6 @@
 (setq save-interprogram-paste-before-kill t
       apropos-do-all t
       require-final-newline t
-      visible-bell t
       ediff-window-setup-function 'ediff-setup-windows-plain)
 
 (provide 'sane-defaults)
