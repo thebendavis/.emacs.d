@@ -41,6 +41,7 @@
           flycheck
           git-gutter
           haskell-mode
+          idle-highlight-mode
           magit
           markdown-mode
           multiple-cursors

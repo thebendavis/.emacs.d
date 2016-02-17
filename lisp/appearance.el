@@ -26,6 +26,10 @@
 ;; set font
 (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-12"))
 
+;; highlight occurrences of the word under the point
+(require 'idle-highlight-mode)
+(add-hook 'text-mode-hook (lambda () (idle-highlight-mode t)))
+(add-hook 'prog-mode-hook (lambda () (idle-highlight-mode t)))
 
 ;; ## set the color theme
 ;;(load-theme 'tsdh-dark)
