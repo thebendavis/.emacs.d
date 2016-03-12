@@ -70,6 +70,7 @@
           projectile
           undo-tree
           volatile-highlights
+          which-key
           ws-butler
           yaml-mode
           ))

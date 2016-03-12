@@ -27,3 +27,7 @@
 
 ;; beacon: highlight the cursor whenever the window scrolls
 (beacon-mode 1)
+
+;; which-key: display key bindings for in-progress command
+(require 'which-key)
+(which-key-mode)

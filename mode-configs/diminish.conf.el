@@ -6,4 +6,5 @@
 (eval-after-load "rainbow-mode"        '(diminish 'rainbow-mode))
 (eval-after-load "undo-tree"           '(diminish 'undo-tree-mode))
 (eval-after-load "volatile-highlights" '(diminish 'volatile-highlights-mode))
+(eval-after-load "which-key"           '(diminish 'which-key-mode))
 (eval-after-load "ws-butler"           '(diminish 'ws-butler-mode))
