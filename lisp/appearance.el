@@ -23,9 +23,6 @@
 ;; highlight current line
 (global-hl-line-mode t)
 
-;; set font
-(add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-12"))
-
 ;; highlight occurrences of the word under the point
 (require 'idle-highlight-mode)
 (add-hook 'text-mode-hook (lambda () (idle-highlight-mode t)))
@@ -34,6 +31,17 @@
 ;; anzu: display (current match / total matches) during searches
 (global-anzu-mode t)
 
+;; spaceline mode-line config
+(require 'spaceline-config)
+(spaceline-emacs-theme)
+(spaceline-helm-mode)
+(setq powerline-default-separator 'utf-8)
+
+;; ------------------------------------------------------------
+
+;; set font
+(add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-12"))
+
 ;; ## set the color theme
 ;;(load-theme 'tsdh-dark)
 (require 'moe-theme)
@@ -41,7 +49,6 @@
 ;;(load-theme 'material-light t)
 ;;(load-theme 'material t)
 (require 'base16-eighties-dark-theme)
-
 
 ;; manually set highlight-current-line background color
 ;;(set-face-background hl-line-face "#1c1c1c")

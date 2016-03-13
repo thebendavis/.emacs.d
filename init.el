@@ -68,6 +68,7 @@
           moe-theme
           pandoc-mode
           projectile
+          spaceline
           undo-tree
           volatile-highlights
           which-key

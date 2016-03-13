@@ -36,3 +36,6 @@
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
 (define-key helm-map (kbd "TAB")   'helm-execute-persistent-action)
 (define-key helm-map (kbd "C-z")   'helm-select-action)
+
+;; no need to indicate Helm minor mode
+(eval-after-load "helm" '(diminish 'helm-mode))
