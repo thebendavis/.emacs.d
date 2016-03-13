@@ -9,16 +9,15 @@
 ;; latest stable Org mode
 (add-to-list 'package-archives
              '("org" . "http://orgmode.org/elpa/") t)
-;; I use MELPA stable whenever possible
+;; MELPA stable
 (add-to-list 'package-archives
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 ;; GNU packages
 (add-to-list 'package-archives
              '("gnu" . "http://elpa.gnu.org/packages/"))
-;; packages that live on MELPA (latest)
+;; MELPA (latest) packages
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
-
 
 (setq package-pinned-packages nil)
 
@@ -59,6 +58,7 @@
 ;; *MELPA (latest)*
 (mapcar (lambda (pkg) (add-to-list 'package-pinned-packages `(,pkg . "melpa")))
         '(
+	  anzu
           base16-theme
           beacon
           helm
@@ -102,6 +102,7 @@
 
 ;; ## global key bindings
 (require 'key-bindings)
+
 
 ;; ## UI configuration
 (require 'appearance)
