@@ -36,6 +36,7 @@
 (spaceline-emacs-theme)
 (spaceline-helm-mode)
 (setq powerline-default-separator 'utf-8)
+(setq anzu-cons-mode-line-p nil) ;; spaceline shows anzu, so disable anzu's own
 
 ;; ------------------------------------------------------------
 
